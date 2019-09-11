@@ -1,1 +1,9 @@
-<h1>Welcome to my Awesome Web App</h1>
+<% @caps.each do |cap| %>
+  <div>
+    <h1><%= cap.name %></h1><br />
+    
+    <p><%= cap.description %></p><br />
+  </div>
+
+  <hr />
+<% end %>
