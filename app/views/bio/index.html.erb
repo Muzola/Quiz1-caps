@@ -1,9 +1,13 @@
+
 <% @caps.each do |cap| %>
-  <div>
-    <h1><%= cap.name %></h1><br />
-    
+  <div class="booyah-box col-8 offset-2">
+    <h1><%= cap.name %></h1>
+    <div class="col-1 offset-2">
+     <span class="dot">
+           <h:graphicImage library="imgs" name="Otis.jpg">
+     </span>
+</div>
     <p><%= cap.description %></p><br />
   </div>
 
-  <hr />
 <% end %>
