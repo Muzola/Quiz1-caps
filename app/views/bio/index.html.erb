@@ -1,12 +1,10 @@
-
+<header>
+    <h1>My Favorite podcasts</h1>
+    
+  </header>
 <% @caps.each do |cap| %>
   <div class="booyah-box col-8 offset-2">
-    <h1><%= cap.name %></h1>
-    <div class="col-1 offset-2">
-     <span class="dot">
-           <%= image_tag 'Otis.jpg', class: 'd-block img-fluid' %>
-     </span>
-</div>
+    <h2><%= cap.name %></h2>
     <p><%= cap.description %></p><br />
   </div>
 
